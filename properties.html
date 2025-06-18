@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScottView Estate - Properties</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">SV</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+
+            <div class="contact"><a href="contact.html">Contact Us</a></div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(to top, #1c023d, #1c023d8c, #1c023d00, #a37cd600), url('images/download\ \(54\).jpg') no-repeat center center/90%; min-height: 90vh;">
+        <h1 class="animate__animated animate__fadeInDown">OUR PROPERTIES</h1>
+    </section>
+
+
+
+
+    <!-- Properties Section -->
+    <!-- houses section -->
+    <section class="houses section">
+
+        <h2 style="margin-top: 30px;
+        color: #1c023d;
+        margin-bottom: 40px;
+        font-size: 28px;
+        text-transform: uppercase;">ALL AVAILABLE PROPERTIES FOR SALE</h2>
+        <h3>Sort By</h3>
+
+         <select name="" id="sort-aesthetics" onchange="updateSelection('sort-aesthetics', 'display-aesthetics')">
+         <option value="" >Aesthetics</option>
+         <option value="Aluminium Roof">Aluminium Roof</option>
+         <option value="levator">Elevator</option>
+         <option value="POP Roof">POP Roof</option>
+         <option value="Swimming Pool">Swimming Pool</option>
+         <option value="Cinema">Cinema</option>
+         <option value="PentHouse">PentHouse</option>
+         <option value="Studio Room">Studio Room</option>
+         <option value="Gym Room">Gym Room</option>
+        </select>
+        
+
+
+        <select id="sort-states" onchange="updateSelection('sort-states', 'display-states')">
+            <option value="" >States:</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Port Harcourt">Rivers</option>
+            <option value="Delta">Delta</option>
+            <option value="Ogun">Ogun</option>
+            <option value="Benin">Edo</option>
+            <option value="Kwara">Kwara</option>
+           </select>
+           
+
+           <select id="sort-rooms" onchange="updateSelection('sort-rooms', 'display-rooms')">
+            <option value=""> Rooms</option>
+            <option value="3 Bedroom">3 Bedroom</option>
+            <option value="4 Bedroom">4 Bedroom</option>
+            <option value="5 Bedroom">5 Bedroom</option>
+            <option value="6 Bedroom">6 Bedroom</option>
+            <option value="7 Bedroom">7 Bedroom</option>
+            <option value="8 Bedroom">8 Bedroom</option>
+            <option value="9 Bedroom">9 Bedroom</option>
+            <option value="10 Bedroom">10 Bedroom</option>
+           </select>
+           
+
+           <select id="sort-price" onchange="updateSelection('sort-price', 'display-price')">
+            <option value="sort-by" >Price</option>
+            <option value="400,0000,000">400,0000,000</option>
+            <option value="500,0000,000">500,0000,000</option>
+            <option value="600,0000,000">600,0000,000</option>
+            <option value="700,0000,000">700,0000,000</option>
+            <option value="800,0000,000">800,0000,000</option>
+            <option value="900,0000,000">900,0000,000</option>
+            <option value="1,000,0000,000">1,000,0000,000</option>
+            <option value="1,100,0000,000">1,100,0000,000</option>
+           </select><br><br>
+
+           <span class="display-sort" id="display-aesthetics">  </span>
+           <span class="display-sort" id="display-states">   </span>
+           <span class="display-sort" id="display-rooms">   </span>
+           <span class="display-sort" id="display-price">   </span>
+
+
+
+           <div class="houses-info section">
+
+            <div class="houses-wrapper">
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/gabi89\'s\ Modern\ Row\ House\ II.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>500,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/The\ House\ _\ Buensalido\ Architects.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>700,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>950,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/The\ House\ _\ Buensalido\ Architects.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>700,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>950,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/Real\ estate\ photo\ editing.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>600,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>950,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/Real\ estate\ photo\ editing.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>600,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/The\ House\ _\ Buensalido\ Architects.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>700,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/gabi89\'s\ Modern\ Row\ House\ II.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>500,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/Real\ estate\ photo\ editing.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>600,000,000</div>
+                </div>
+
+
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/The\ House\ _\ Buensalido\ Architects.jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>700,000,000</div>
+                </div>
+
+            </div>
+        </div>
+           
+      </section>
+
+
+
+
+
+      <!-- Available Rent Property Section -->
+
+      <section class="house-rent section">
+        <h2>Available Houses For Rent</h2>
+
+
+        <div class="houses-wrapper">
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(52\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>300,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/5\ Bedroom\ maisonette\ -\ Ademuyiwa\ Adedotun.jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>250,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>500,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>500,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/5\ Bedroom\ maisonette\ -\ Ademuyiwa\ Adedotun.jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>250,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>500,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>500,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>500,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>500,000,000</div>
+            </div>
+
+
+            <div class="houses-wrapper">
+                <div class="houses-container" >
+                    <div class="house" style="background: url(images/download\ \(52\).jpg);"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                    <div>300,000,000</div>
+                </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>500,000,000</div>
+            </div>
+
+
+            <div class="houses-container" >
+                <div class="house" style="background: url(images/download\ \(55\).jpg);"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum autem magnam sapiente unde excepturi saepe dolores, eveniet quae...</p>
+                <div>500,000,000</div>
+            </div>
+
+
+        </div>
+      </section>
+
+    
+      
+
+      <!-- footer section -->
+
+      <footer>
+
+        <div class="footer-section">
+
+            <div class="logo">
+
+                <h2>SV</h2>
+                <h3>ScottView Real Estate</h3>
+                <p>Thank you for choosing ScottView Real Estate for your property</p>
+                <a href="https://instagram.com/scott_graphics15"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ScottViewDev"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="https://tiktok.com/scottViewDev"> <i class="fa-brands fa-tiktok"></i></a>
+                <a href=" https://linkedin.com/otuole-olise-michael"> <i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="properties">
+                <h3>Properties</h3>
+                <ul>
+                    <li><a href="properties.html">Bedrooms</a></li>
+                    <li><a href="properties.html">Semi Detached</a></li>
+                    <li><a href="properties.html">Fully Detached</a> </li>
+                    <li><a href="properties.html">For Sale</a></li>
+                    <li><a href="properties.html">For Rent </a> </li>
+                    <li><a href="properties.html">Land</a> </li>
+                    <li><a href="properties.html"> Shop</a></li>
+                </ul>
+            </div>
+            <div class="get-in-touch">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><a href="contact.html">Lagos</a></li>
+                    <li><a href="contact.html">Abuja</a></li>
+                    <li><a href="contact.htmlcontact.html">Port Harcourt</a></li>
+                    <li><a href="contact.html">Benin</a></li>
+                    <li><a href="contact.html">Delta</a></li>
+                    <li><a href="contact.html">Kwara</a></li>
+                    <li><a href="contact.html">Ogun</a></li>
+                </ul>
+            </div>
+            <div class="privacy-and-policy">
+                <h3>Privacy & Policies</h3>
+                <ul>
+                    <li><a href="">Cookies Policy</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href=""> T & C</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p>&copy Copyright 2025 ScottViewDev, All Rights Reserved</p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
