@@ -1,4 +1,4 @@
-# Prime Estate - Real Estate Website
+# ScottView Estate - Real Estate Website
 
 This is a modern and sleek real estate website with multiple pages, stunning animations, and real estate features.
 
